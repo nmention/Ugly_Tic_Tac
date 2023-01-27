@@ -1,0 +1,4 @@
+enum Sign {
+    CROSS,
+    CIRCLE
+}
