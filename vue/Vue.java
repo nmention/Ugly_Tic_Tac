@@ -37,6 +37,19 @@ public class Vue extends JFrame {
         this.setContentPane(jpanel);
     }
 
+
+    public void winningFrame(){
+
+    }
+
+
+    public void gameOverFrame(){
+
+    }
+
+
+
+
     public static void main(String[] args) {
         Vue vue = new Vue(new Grid(3),new CellListener());
 
