@@ -1,3 +1,5 @@
+package model;
+
 public class Player {
     Sign sign;
 
@@ -6,7 +8,7 @@ public class Player {
 
 
 
-    public Player(String name,Sign sign){
+    public Player(String name, Sign sign){
         this.name = name;
         this.sign = sign;
         won = false;

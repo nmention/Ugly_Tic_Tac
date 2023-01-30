@@ -1,3 +1,7 @@
+package model;
+
+import model.Player;
+
 import java.util.ArrayList;
 
 public class Grid {
@@ -5,6 +9,13 @@ public class Grid {
     ArrayList<Player> players;
     int size;
 
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
 
     public Grid(int size){
         this.size = size;

@@ -1,3 +1,5 @@
+package model;
+
 import javax.swing.*;
 
 public class Cell {

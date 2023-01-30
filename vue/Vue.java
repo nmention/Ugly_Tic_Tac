@@ -1,3 +1,8 @@
+package vue;
+
+import controller.CellListener;
+import model.Grid;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,8 +18,8 @@ public class Vue extends JFrame {
         this.grid = grid;
         this.cellListener = cellListener;
         jpanel = new JPanel();
-        jpanel.setLayout(new GridLayout(grid.size,grid.size));
-        for (int i = 0; i < grid.size * grid.size ; i++) {
+        jpanel.setLayout(new GridLayout(grid.getSize(),grid.getSize()));
+        for (int i = 0; i < grid.getSize() * grid.getSize() ; i++) {
             CellButton b = new CellButton(grid.getCells().get(i));
             b.setBackground(Color.BLUE);
             b.addMouseListener(this.cellListener);
