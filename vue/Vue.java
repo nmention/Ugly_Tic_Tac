@@ -31,7 +31,10 @@ public class Vue extends JFrame {
 
 
         setVisible(true);
-        setSize(400,600);
+
+        setSize(500,650);
+
+        setLocationRelativeTo(null);
         setResizable(true);
 
         this.setContentPane(jpanel);
@@ -51,7 +54,8 @@ public class Vue extends JFrame {
 
 
     public static void main(String[] args) {
-        Vue vue = new Vue(new Grid(3),new CellListener());
+        Grid grid = new Grid(3);
+        Vue vue = new Vue(grid,new CellListener(grid));
 
     }
 

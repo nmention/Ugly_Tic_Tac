@@ -17,9 +17,18 @@ public class Grid {
         this.size = size;
     }
 
+    public ArrayList<Player> getPlayers() {
+        return players;
+    }
+
     public Grid(int size){
         this.size = size;
         cells = new ArrayList<>();
+        players = new ArrayList<>();
+
+
+        players.add(new Player("Jacques",Sign.CROSS));
+        players.add(new Player("Pierre",Sign.CIRCLE));
         for (int i = 0; i < size ; i++) {
             for (int j = 0; j < size; j++) {
                 cells.add(new Cell());

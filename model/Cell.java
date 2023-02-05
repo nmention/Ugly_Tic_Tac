@@ -6,20 +6,27 @@ public class Cell {
 
     static String imgPath;
 
-    boolean marked;
+    @Override
+    public String toString() {
+        return "Cell{" +
+                "marked=" + marked +
+                '}';
+    }
+
+    Sign marked;
     static ImageIcon img;
 
 
-    public boolean isMarked() {
+    public Sign isMarked() {
         return marked;
     }
 
-    public void setMarked(boolean marked) {
+    public void setMarked(Sign marked) {
         this.marked = marked;
     }
 
     public Cell(){
-        marked = false;
+        marked = null;
     }
 
 
