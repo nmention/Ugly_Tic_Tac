@@ -19,12 +19,15 @@ public class CellListener implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         CellButton button = (CellButton) e.getSource();
-        button.getCell().setMarked(grid.getPlayers().get(0).getSign());
+        if (button.getCell().isMarked() == null){
+          button.getCell().setMarked(grid.getPlayers().get(0).getSign());
 
-        System.out.println(button.getCell());
-        button.setIcon(grid.getPlayers().get(0).getSignMarked());
-        button.setDisabledIcon(grid.getPlayers().get(0).getSignMarked());
-        button.setEnabled(false);
+          System.out.println(button.getCell());
+          button.setIcon(grid.getPlayers().get(0).getSignMarked());
+          button.setDisabledIcon(grid.getPlayers().get(0).getSignMarked());
+          button.setEnabled(false);
+        }
+
 
 
 

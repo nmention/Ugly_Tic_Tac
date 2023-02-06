@@ -1,6 +1,6 @@
 package model;
 
-enum Sign {
+public enum Sign {
     CROSS,
     CIRCLE
 }

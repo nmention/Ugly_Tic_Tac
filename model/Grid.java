@@ -70,6 +70,10 @@ public class Grid {
         return diagonals;
     }
 
+    public void addPlayers(Player player){
+      players.add(player);
+    }
+
 
 
 
