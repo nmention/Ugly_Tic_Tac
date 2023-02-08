@@ -49,6 +49,7 @@ public class Server {
       }
       System.out.println("------");
       System.out.println("Game shared in rmiregistry");
+      System.out.println(hostname);
       System.out.println("------");
 
     }
