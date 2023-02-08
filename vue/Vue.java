@@ -5,6 +5,8 @@ import model.Grid;
 
 import javax.swing.*;
 import java.awt.*;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 public class Vue extends JFrame {
     JPanel jpanel;
@@ -38,6 +40,11 @@ public class Vue extends JFrame {
         setResizable(true);
 
         this.setContentPane(jpanel);
+      try {
+        System.out.println(InetAddress.getLocalHost().getHostName());
+      } catch (UnknownHostException e) {
+        throw new RuntimeException(e);
+      }
     }
 
 
